@@ -1,0 +1,1260 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+
+        body xmp {
+            line-height: 1.2;
+            color: #323437;
+            font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, SimSun, sans-serif;
+            font-size: 12px;
+            background-color: #f8f8f8;
+        }
+
+        div.table-list {
+            padding-top: 6px;
+            padding-bottom: 6px;
+            padding-right: 1px;
+            border: 1px solid #dedede;
+        }
+
+        div.table-list table.list {
+            border-collapse: collapse;
+            width: 100%;
+            font-size: 12px
+        }
+
+        div.table-list table.list th {
+            height: 16px;
+            line-height: 16px;
+            padding: 13px 20px 0 10px;
+            text-align: right;
+            color: #5b5d61;
+            white-space: nowrap;
+            font-weight: 400
+        }
+
+        div.table-list table.list tr td:first-child {
+            border-left: 0
+        }
+
+        div.table-list table.list tr td {
+            border-left: 1px solid #f0f0f0;
+            padding: 6px 20px 6px 5px;
+            height: 17px;
+            line-height: 35px;
+            white-space: nowrap;
+            text-align: right
+        }
+
+        div.table-list table.list tr td.center {
+            text-align: center
+        }
+
+        div.table-list table.list tr.no-data td {
+            border: none;
+            text-align: left
+        }
+
+        div.table-list table.list tr.title {
+            border-bottom: none;
+            height: 50px;
+            line-height: 50px
+        }
+
+        div.table-list table.list .empty-tr0 {
+            width: 1px;
+            padding: 6px 19px 6px 0;
+            border-left: 0
+        }
+
+        div.table-list table.list tr.empty-tr2 td {
+            padding-top: 1px;
+            padding-bottom: 1px
+        }
+
+        div.table-list table.list tr.empty-tr3 td {
+            padding-top: 1px;
+            padding-bottom: 2px
+        }
+
+        div.table-list table.list tr.highlight td {
+            color: #111314;
+            font-size: 46px;
+            font-weight: bolder
+        }
+
+        div.table-list table.list tr.highlight td.normal {
+            padding-left: 20px;
+            font-size: 12px;
+            font-weight: 400;
+            text-align: left
+        }
+
+        div.table-list table.list tr td.normal {
+            padding-left: 20px;
+            width: 85px;
+            text-align: left;
+            color: #323437
+        }
+
+        div.table-list table.list tr td div.value {
+            margin-top: 10px;
+            font-size: 55px;
+            color: #121315;
+            font-weight: bolder;
+            line-height: 50px
+        }
+
+        div.table-list table.list tr.fade th {
+            color: #A8A7A7
+        }
+
+        div.table-list table.list tr.fade td {
+            color: #787a7d;
+            font-size: 12px;
+            border-bottom: none
+        }
+
+        table {
+            table-layout: fixed;
+        }
+
+        table tr td {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            -o-text-overflow: ellipsis;
+            -moz-text-overflow: ellipsis;
+            -webkit-text-overflow: ellipsis;
+        }
+
+        .table-grid {
+            width: 58%;
+            height: 405px;
+            overflow: hidden;
+            padding-left: 40px;
+        }
+
+        .table-grid .table-grid-item {
+            border: 1px solid #e1e2e2;
+            border-radius: 2px;
+            margin-bottom: 18px;
+        }
+
+        .table-grid .table-grid-item .title {
+            padding: 20px 20px 10px
+        }
+
+        .table-grid .table-grid-item .table-data {
+            padding: 0 20px
+        }
+
+        .table-grid .table-grid-item .table-layout-top10 {
+            width: 100%;
+            padding-left: 40px;
+            font-size: 12px;
+        }
+
+        .table-grid .table-grid-item .table-layout-top10 tr {
+            height: 24px;
+            line-height: 24px;
+        }
+
+        .table-grid .table-grid-item .table-layout-top10 thead .th input[type=checkbox] {
+            vertical-align: middle
+        }
+
+        div.table-grid div.table-grid-item {
+            margin-top: 1px;
+            background-color: #fff;
+            height: 400px
+        }
+
+        div.table-grid div.table-grid-item div.title div.l {
+            color: #323437;
+            font-weight: 700;
+            font-size: 14px
+        }
+
+        div.table-grid div.table-grid-item div.title div.r a {
+            color: #666
+        }
+
+        div.table-grid div.table-grid-item table {
+            width: 100%;
+            table-layout: fixed
+        }
+
+        div.table-grid div.table-grid-item table tr.th td {
+            color: #5b5d61;
+            border-bottom: 1px solid #ddd
+        }
+
+        div.table-grid div.table-grid-item table tr {
+            height: 16px;
+            line-height: 16px
+        }
+
+        div.table-grid-item table thead tr td {
+            color: #787a7d
+        }
+
+        .table-grid-item tr td, .table-grid-item tr th, div.table-grid-item table tr td {
+            margin: 0;
+            overflow: hidden;
+            color: #323437;
+            border-top: 1px solid #fff
+        }
+
+        div.table-grid div.table-grid-item table tr:hover {
+            background-color: #e8effb
+        }
+
+        div.table-grid div.table-grid-item table tr td.ar {
+            text-align: right
+        }
+
+        div.table-grid div.table-grid-item table thead tr td.al {
+            padding-bottom: 10px
+        }
+
+        div.table-grid div.table-grid-item table tr td.al {
+            text-align: left;
+            white-space: nowrap
+        }
+
+        div.table-grid div.table-grid-item table tr td.ratio {
+            text-align: left;
+            padding-left: 20px
+        }
+
+        .table-grid-item table {
+            width: 100%
+        }
+
+        .table-grid-item tr, div.table-grid div.table-grid-item table thead tr {
+            height: 20px;
+            line-height: 20px
+        }
+
+        .table-grid-item tr td, .table-grid-item tr th {
+            background-color: #fff;
+            padding: 0 0 6px
+        }
+
+        .table-grid-item tr th {
+            color: #999;
+            background-color: #EAEAEA;
+            width: auto
+        }
+
+        .table-grid-item tr .ar {
+            text-align: right
+        }
+
+        .table-grid-item tr .al {
+            text-align: left;
+            white-space: nowrap
+        }
+
+        .table-grid-item tr .ratio {
+            text-align: left;
+            padding-left: 20px;
+            width: 90px
+        }
+
+        .overview-card-title-container {
+            padding: 14px 15px 0
+        }
+
+        .overview-card-title {
+            font-size: 14px;
+            color: #323437;
+            font-weight: 700
+        }
+    </style>
+    <script src="https://img.hcharts.cn/jquery/jquery-1.8.3.min.js"></script>
+    <script src="https://img.hcharts.cn/highcharts/highcharts.js"></script>
+    <script src="https://img.hcharts.cn/highmaps/modules/map.js"></script>
+    <script src="https://img.hcharts.cn/highcharts/modules/exporting.js"></script>
+    <script src="https://img.hcharts.cn/highcharts/modules/data.js"></script>
+    <script src="https://img.hcharts.cn/highcharts/modules/drilldown.js"></script>
+    <script src="https://img.hcharts.cn/highcharts/modules/series-label.js"></script>
+    <script src="https://img.hcharts.cn/highcharts/modules/oldie.js"></script>
+    <script src="https://img.hcharts.cn/highcharts-plugins/highcharts-zh_CN.js"></script>
+    <!--<script src="https://img.hcharts.cn/highcharts/themes/dark-blue.js"></script>&lt;!&ndash; 深色主题 &ndash;&gt;-->
+</head>
+<body>
+<div>
+    <div style="width:40%;height:400px;float:left">
+        <div class="table-list" style="height:360px">
+            <div class="overview-card-title-container">
+                <label class="overview-card-title">平台流量</label>
+            </div>
+            <table cellspacing="0" cellpadding="0" class="list">
+                <tbody>
+                <tr class="title">
+                    <th></th>
+                    <th>浏览量(PV)</th>
+                    <th>访客数(UV)</th>
+                    <th>IP数</th>
+                    <th class="empty-tr0"></th>
+                </tr>
+                <tr class="highlight">
+                    <td class="normal">今日</td>
+                    <td id="pv_today"></td>
+                    <td id="uv_today"></td>
+                    <td id="ip_today"></td>
+                    <td class="empty-tr0"></td>
+                </tr>
+                <tr>
+                    <td class="normal">昨日</td>
+                    <td id="pv_yestoday"></td>
+                    <td id="uv_yestoday"></td>
+                    <td id="ip_yestoday"></td>
+                    <td class="empty-tr0"></td>
+                </tr>
+                <tr class="fade empty-tr2">
+                    <td colspan="5"></td>
+                </tr>
+                </tbody>
+            </table>
+
+            <table class="list">
+                <tbody>
+                <tr>
+                    <td class="center">
+                    <span class="text">当月最高访问量(QPS)
+                        <!--<a href="javascript:void(0);" data="ip_count" class="help">&nbsp;</a>-->
+                    </span>
+                        <div class="value" id="qps" style="font-size: 38px"></div>
+                    </td>
+                    <td class="center">
+                    <span class="text">这个月日均访问量(PV)
+                        <!--<a href="javascript:void(0);" data="pv_count" class="help">&nbsp;</a>-->
+                    </span>
+                        <div class="value" id='pv_month_avg' title="" style="font-size: 38px"></div>
+                    </td>
+                    <td class="center">
+                    <span class="text">今年日均访问量(PV)
+                        <!--<a href="javascript:void(0);" data="visitor_count" class="help">&nbsp;</a>-->
+                    </span>
+                        <div class="value" id='pv_year_avg' title="" style="font-size: 38px"></div>
+                    </td>
+                    <td class="last center">
+                    <span class="text">今年平均每月访问量(PV)
+                        <!--<a href="javascript:void(0);" data="ip_count" class="help">&nbsp;</a>-->
+                    </span>
+                        <div class="value" id="pv_month_year_avg" style="font-size: 38px"></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="container_yearpv" style="width:60%;height:400px;float:right"></div>
+</div>
+<br/>
+<div>
+    <div id="container" style="width:60%;height:400px;float:left"></div>
+    <div id="container_area" style="width:40%;height:400px"></div>
+</div>
+<br/>
+<div>
+    <div id="container_device" style="width:30%;height:400px;float:left"></div>
+    <div class="table-grid clearfix">
+        <div class="table-grid-item">
+            <div class="title clearfix">
+                <div class="l">Top10受访页面</div>
+            </div>
+            <div class="table-data clearfix">
+                <table cellpadding="0" cellspacing="0" class="table-layout-top10">
+                    <thead>
+                    <tr>
+                        <td class="al url">受访页面</td>
+                        <td class="ar" width="15%">浏览量(PV)</td>
+                        <td class="ratio" width="15%">占比</td>
+                    </tr>
+                    </thead>
+                    <tbody id="landing-page-container">
+                    <!--<tr>-->
+                    <!--<td title="https://coric.top/zh/home" class="al url">-->
+                    <!--<a target="_blank" class="ellipsis" href="https://coric.top/zh/home">https://coric.top/zh/home</a>-->
+                    <!--</td>-->
+                    <!--<td class="ar">6,179</td>-->
+                    <!--<td class="ratio">-->
+                    <!--<div title="32.93%" style="background-color:#dcebfe; width:32.93%;">32.93%</div>-->
+                    <!--</td>-->
+                    <!--</tr>-->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div id="container_browser" style="width:30%;height:400px;float:left"></div>
+    <div class="table-grid clearfix">
+        <div class="table-grid-item">
+            <div class="title clearfix">
+                <div class="l">Top10请求时长</div>
+            </div>
+            <div class="table-data clearfix">
+                <table cellpadding="0" cellspacing="0" class="table-layout-top10">
+                    <thead>
+                    <tr>
+                        <td class="al url">请求内容</td>
+                        <td class="ar" width="15%">时间</td>
+                        <td class="ratio" width="10%">请求时长</td>
+                    </tr>
+                    </thead>
+                    <tbody id="page-container-browser">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="message"></div>
+<script>
+    $(function () {
+        // 定义时间格式化
+
+        Date.prototype.format = function (fmt) { //author: meizz   
+            var o = {
+                "M+": this.getMonth() + 1,                       //月份
+                "d+": this.getDate(),                           //日
+                "h+": this.getHours(),                          //小时
+                "m+": this.getMinutes(),                        //分
+                "s+": this.getSeconds(),                        //秒
+                "q+": Math.floor((this.getMonth() + 3) / 3),    //季度
+                "S": this.getMilliseconds()                     //毫秒
+            };
+            if (/(y+)/.test(fmt))
+                fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+            for (var k in o)
+                if (new RegExp("(" + k + ")").test(fmt))
+                    fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+            return fmt;
+        };
+
+        var d = new Date();
+
+        var year = d.getFullYear();
+        var month = d.getMonth() + 1;
+        var date = d.getDate();
+
+        var yearStr = year.toString();
+        var monthStr = month.toString();
+        var dateStr = date.toString();
+
+        var thisDay = new Date().format('yyyy-MM-dd').toString();
+        var thisMonth = new Date().format('yyyy-MM').toString();
+        var numDay = new Date().format('yyyyMMdd').toString();
+
+        var yesnumDay = new Date(d.getTime() - 24 * 60 * 60 * 1000).format('yyyyMMdd');
+        var yesYear = new Date(d.getTime() - 24 * 60 * 60 * 1000).getFullYear().toString();
+        var yesMonth = (new Date(d.getTime() - 24 * 60 * 60 * 1000).getMonth() + 1).toString();
+        var yesDate = new Date(d.getTime() - 24 * 60 * 60 * 1000).getDate().toString();
+        var yesDateStr = new Date(d.getTime() - 24 * 60 * 60 * 1000).format('yyyy-MM-dd');
+
+
+
+        // 浏览量pv显示
+        $.ajax({
+            type: "get",
+            async: false,
+            url: "/zjxxw/day/data?date=" + thisDay,
+            success: function (data) {
+                //    console.log(this.url)
+                //    console.log(data)
+                data1 = data[0].toString().split(':');
+                data2 = data[1].toString().split(':');
+                data3 = data[2].toString().split(':');
+                pvdata=0
+                uvdata=0
+                ipdata=0
+                if(data1.length>1){
+                    pvdata = data1[1].toString().replace(')', '').replace(']', '');
+                }
+                if(data2.length>1){
+                    uvdata = data2[1].toString().replace(')', '').replace(']', '');
+                }
+                if(data3.length>1){
+                    ipdata = data3[1].toString().replace(')', '').replace(']', '');
+                }
+                $("#pv_today").html(pvdata);
+                $("#uv_today").html(uvdata);
+                $("#ip_today").html(ipdata);
+            }
+
+        });
+
+        $.ajax({
+            type: "get",
+            async: false,
+            url: "/zjxxw/day/data?date=" + yesDateStr,
+            success: function (data) {
+                //   console.log(this.url)
+                //   console.log(data)
+                data1 = data[0].toString().split(':');
+                data2 = data[1].toString().split(':');
+                data3 = data[2].toString().split(':');
+                //    console.log(data1)
+                //    console.log(data2)
+                //    console.log(data3)
+                uvdata = '0';
+                if (data2.length >= 2) {
+                    uvdata = data2[1].toString().replace(')', '').replace(']', '');
+                }
+                pvdata = data1[1].toString().replace(')', '').replace(']', '');
+                ipdata = data3[1].toString().replace(')', '').replace(']', '');
+                $("#pv_yestoday").html(pvdata);
+                $("#uv_yestoday").html(uvdata);
+                $("#ip_yestoday").html(ipdata);
+            }
+
+        });
+
+
+        // 这个月日均访问量
+        $.ajax({
+            type: "get",
+            async: false,
+            url: "/zjxxw/month/dayAvg?date=" + thisMonth + "&type=pv",
+            success: function (data) {
+                // console.log(data)
+                data = data.split(':')[1];
+                $('#pv_month_avg').html(data.replace(')', '').replace(']', ''));
+            }
+        });
+
+        // 今年日均访问量
+        $.ajax({
+            type: "get",
+            async: false,
+            url: "/zjxxw/year/dayAvg?date=" + year + "&type=pv",
+            success: function (data) {
+                $('#pv_year_avg').html(data);
+            }
+        });
+
+        // 今年日均访问量
+        $.ajax({
+            type: "get",
+            async: false,
+            url: "/zjxxw/year/dayAvg?date=" + year + "&type=pv",
+            success: function (data) {
+                $('#pv_year_avg').html(data);
+            }
+        });
+
+        // 今年月均访问量
+         $.ajax({
+            type: "get",
+            async: false,
+            url: "/zjxxw/year/monthAvg?date=" + year + "&type=pv",
+            success: function(data){
+                $('#pv_month_year_avg').html(data)
+            }
+        })
+
+        //qps
+        $.ajax({
+            type: "get",
+            async: false,
+            url: "/zjxxw/month/qps?date=2019-04&type=pv",
+            success: function(data){
+                qpsdata=data.split(":")[1];
+                $('#qps').html(qpsdata.replace(")",""))
+            }
+        })
+        // 浏览量分布图
+        $.ajax({
+            type: "get",
+            async: false,
+            url: "/zjxxw/year/all?type=pv",
+            success: function (pv_data) {
+                var year_value = "";
+                var data_handle = "";
+                var years = [];
+                var rst=[];
+                //存放  年度y坐标
+                var rst = eval('[' + data_handle + ']');
+                //console.log(pv_data)
+                for (var i = 0; i < pv_data.length; i++) {
+                    //year_value = year_value.concat(pv_data[i].split(':'));
+                    year_value=pv_data[i].split(':')
+                    years.push(year_value[0])
+                    rst.push(Number(year_value[1]))
+
+                    // if (i < pv_data.length - 2) {
+                    //     year_value = year_value + ",";
+                    // }
+                    // data_handle = data_handle.concat(pv_data[i].split(':')[1]);
+                    // if (i < pv_data.length - 2) {
+                    //     data_handle = data_handle + ",";
+                    // }
+                }
+                // //存放 年度x坐标
+                // var years = eval('[' + year_value + ']');
+                // //存放  年度y坐标
+                // var rst = eval('[' + data_handle + ']');
+                var series = [];
+
+                var drillDownSeries = [];
+                //console.log("years    "+years)
+                //console.log("rst    "+rst)
+                for (var i = 0; i < years.length; i++) {
+                    series.push({
+                        name: years[i],
+                        y: rst[i],
+                        drilldown: years[i]
+                    });
+                 //   console.log( "series  "+i+"  "+rst[i])
+                    $.ajax({
+                        type: "get",
+                        async: false,
+                        url: "/zjxxw/month?year=" + (years[i]).toString() + "&type=pv",
+                        success: function (month_Data) {
+                            // 存放一年中每月的数据
+                            var months_data = [];
+                   //         console.log(month_Data)
+                            for (var y = 0; y < month_Data.length; y++) {
+                                var monthstrs = month_Data[y].split(":");
+                                months_data.push({
+                                    name: monthstrs[0],
+                                    y: Number(monthstrs[1]),
+                                    drilldown: monthstrs[0]
+                                });
+                        //        console.log("months_data  "+y+"  "+monthstrs[1])
+                                $.ajax({
+                                    type: "get",
+                                    async: false,
+                                    url: "/zjxxw/day?month=" + (monthstrs[y]).toString() + "&type=pv",
+                                    success: function (dayData) {
+                                        var days_data = [];
+                                    //    console.log(dayData)
+                                        for (var z = 0; z < dayData.length - 1; z++){
+                                            var daystrs = dayData[z].split(":");
+                                            days_data.push({
+                                                name: daystrs[0],
+                                                y: Number(daystrs[1]),
+                                            });
+                                        //    console.log("days_data  "+z+"  "+daystrs[1])
+                                        }
+
+                                        drillDownSeries.push({
+                                            name: monthstrs[y],
+                                            id: monthstrs[y],
+                                            data: days_data
+                                        });
+                                    //    console.log("monthstrs[y]  "+monthstrs[y])
+
+                                    //    console.log("days_data "+days_data)
+                                    }
+                                });
+                            }
+                            drillDownSeries.push({
+                                name: years[i],
+                                id: years[i],
+                                data: months_data
+                            });
+                            //console.log("years[i]   "+years[i])
+                            //console.log("months_data   "+months_data)
+                            if (i === years.length - 1) {
+                                Highcharts.chart('container_yearpv', {
+                                    chart: {
+                                        type: 'column'
+                                    },
+                                    title: {
+                                        text: '各年份访问量分布'
+                                    },
+                                    subtitle: {
+                                        text: '点击可查看具体的版本数据，数据来源: <a href="http://www.zjlll.net">zjlll.net</a>.'
+                                    },
+                                    xAxis: {
+                                        type: 'category'
+                                    },
+                                    yAxis: {
+                                        title: {
+                                            text: '总的访问记录'
+                                        }
+                                    },
+                                    legend: {
+                                        enabled: false
+                                    },
+                                    plotOptions: {
+                                        series: {
+                                            borderWidth: 0,
+                                            dataLabels: {
+                                                enabled: true,
+                                                format: '{point.y}'
+                                            }
+                                        }
+                                    },
+                                    tooltip: {
+                                        headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+                                        pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y}</b><br/>'
+                                    },
+                                    series: [{
+                                        name: '年度访问量',
+                                        colorByPoint: true,
+                                        data: series
+                                    }],
+                                    drilldown: {
+                                        series: drillDownSeries
+                                    }
+                                });
+                            }
+                        }
+                    });
+                }
+            }
+        });
+
+        // 日浏览量分布图
+        $.ajax({
+            type: "get",
+            async: false,
+            url: "/zjxxw/hour/data?date="+thisDay+"&type=pv",
+            success: function (pv_datas) {
+                //console.log(pv_datas)
+                var pv_source = pv_datas.split(')');
+                var pvhour=[]
+                var pvrst=[]
+                pv_source.forEach(function (line_data) {
+                    line_data=line_data.replace('[','').replace('(','')
+                    lines=line_data.split(":");
+                    if(lines.length>1){
+                        pvhour.push(Number(lines[0]))
+                        pvrst.push(Number(lines[1]))
+                    }
+                })
+                var pvtmp = [];
+                for (var i = 0; i < 24; i++) {
+                    var index = $.inArray(i, pvhour);
+                    if (index > 0) {
+                        pvtmp.push(pvrst[index]);
+                    } else {
+                        pvtmp.push(0);
+                    }
+                }
+
+                $.ajax({
+                    type: "get",
+                    async: false, ///nginx_log_need/zjxxw/houruv/"+yearStr+"/"+monthStr+"/"+numDay+".txt
+                    url: "/zjxxw/hour/data?date="+thisDay+"&type=uv",
+                    success: function (uv_data) {
+                        //console.log(uv_data)
+
+                        var uv_source = uv_data.split(')');
+                        var uvhour=[]
+                        var uvrst=[]
+                        uv_source.forEach(function (line_data) {
+                            line_data=line_data.replace('[','').replace('(','')
+                            lines=line_data.split(":");
+                            if(lines.length>1){
+                                uvhour.push(Number(lines[0]))
+                                uvrst.push(Number(lines[1]))
+                            }
+                        })
+
+                        var uvtmp = [];
+                        for (var i = 0; i < 24; i++) {
+                            var index = $.inArray(i, uvhour);
+                            if (index > 0) {
+                                uvtmp.push(uvrst[index]);
+                            } else {
+                                uvtmp.push(0);
+                            }
+                        }
+
+                        $.ajax({
+                            type: "get",
+                            async: false,
+                            url: "/zjxxw/hour/data?date="+thisDay+"&type=ip",
+                            success: function (ip_data) {
+                                //console.log(ip_data)
+
+                                var ip_source = ip_data.split(')');
+                                var iphour=[]
+                                var iprst=[]
+                                ip_source.forEach(function (line_data) {
+                                    line_data=line_data.replace('[','').replace('(','')
+                                    lines=line_data.split(":");
+                                    if(lines.length>1){
+                                        iphour.push(Number(lines[0]))
+                                        iprst.push(Number(lines[1]))
+                                    }
+                                })
+
+                                var iptmp = [];
+                                for (var i = 0; i < 24; i++) {
+                                    var index = $.inArray(i, iphour);
+                                    if (index > 0) {
+                                        iptmp.push(iprst[index]);
+                                    } else {
+                                        iptmp.push(0);
+                                    }
+                                }
+
+                                var title = {
+                                    style: {
+                                        //fontSize: '37px'
+                                    },
+                                    text: '日访问量分布'
+                                };
+                                var subtitle = {
+                                    text: '来源：www.zjlll.net'
+                                };
+                                var xAxis = {
+                                    title: {
+                                        text: '访问时间（小时）'
+                                    },
+                                    type: 'datetime',
+                                    dateTimeLabelFormats: {
+                                        hour: '%H:%M'
+                                    }
+                                    //categories: hour
+                                };
+                                var yAxis = {
+                                    title: {
+                                        text: '访问量（次）'
+                                    },
+                                    plotLines: [{
+                                        value: 0,
+                                        width: 1,
+                                        color: '#808080'
+                                    }]
+                                };
+                                var tooltip = {
+                                    xDateFormat: '%H:%M - %H:59'
+                                    //valueSuffix: '次'
+                                };
+                                var yesterday = new Date(new Date().setDate(new Date().getDate()));
+                                var plotOptions = {
+                                    series: {
+                                        pointStart: Date.UTC(yesterday.getFullYear(), yesterday.getMonth(), yesterday.getDate()), // 开始值
+                                        pointInterval: 3600 * 1000 // 间隔一小时
+                                    }
+                                };
+                                var legend = {
+                                    layout: 'vertical',
+                                    align: 'right',
+                                    verticalAlign: 'middle',
+                                    borderWidth: 0
+                                };
+                                var credits = {
+                                    enabled: false
+                                };
+                                var exporting = {
+                                    enabled: false
+                                };
+                                var series = [{
+                                    name: '浏览量（PV）',
+                                    data: pvtmp
+                                }, {
+                                    name: '访客数（UV）',
+                                    data: uvtmp
+                                }, {
+                                    name: 'IP数',
+                                    data: iptmp
+                                }];
+                                var json = {
+                                    title: title,
+                                    subtitle: subtitle,
+                                    xAxis: xAxis,
+                                    yAxis: yAxis,
+                                    tooltip: tooltip,
+                                    legend: legend,
+                                    credits: credits,
+                                    exporting: exporting,
+                                    series: series,
+                                    plotOptions: plotOptions
+                                };
+                                $('#container').highcharts(json);
+                            }
+                        });
+                    }
+                });
+            }
+        });
+
+        // 地区点击量分布图
+        var area_data = [
+            ['杭州', 728],
+            ['金华', 710],
+            ['宁波', 963],
+            ['舟山', 541],
+            ['温州', 622],
+            ['湖州', 866],
+            ['嘉兴', 398],
+            ['绍兴', 785],
+            ['丽水', 223],
+            ['台州', 605],
+            ['衢州', 237]];
+
+        $.ajax({
+            type: "get",
+            async: false,
+            url: "/zjxxw/area",
+            success: function (data) {
+                var area_pv = data.split(']');
+                var area = "";
+                for (var i = 0; i < area_pv.length - 1; i++) {
+                    if (i == 0) {
+                        area = area_pv[i] + "]";
+                    } else {
+                        area = area + area_pv[i].substr(1) + "]";
+                        if (i < area_pv.length - 2) {
+                            area = area + ",";
+                        }
+                    }
+                }
+                // area_data = eval('[' + area + ']');
+                if ('' === area_data[0][0]) {
+                    area_data[0][0] = '杭州';
+                }
+
+                $.getJSON('https://data.jianshukeji.com/jsonp?filename=geochina/zhejiang.json&callback=?', function (geojson) {
+                    // Initiate the chart
+                    Highcharts.mapChart('container_area', {
+                        title: {
+                            text: '日点击量地区分布'
+                        },
+                        mapNavigation: {
+                            enabled: false,
+                            buttonOptions: {
+                                verticalAlign: 'right'
+                            }
+                        },
+                        legend: {
+                            verticalAlign: 'middle',
+                            layout: 'vertical',
+                            align: 'right'
+                        },
+                        colorAxis: {
+                            tickPixelInterval: 100
+                        },
+                        credits: {
+                            enabled: false
+                        },
+                        exporting: {
+                            enabled: false
+                        },
+                        series: [{
+                            data: area_data,
+                            mapData: geojson,
+                            joinBy: 'name',
+                            keys: ['name', 'value'],
+                            name: '地区日浏览量（PV）',
+                            states: {
+                                hover: {
+                                    color: '#a4edba'
+                                }
+                            },
+                            dataLabels: {
+                                enabled: true,
+                                format: '{point.properties.postal}'
+                            }
+                        }]
+                    });
+                });
+            }
+        });
+
+        // 设备访问占比图
+        var device_data1 = [
+            {name: 'Firefox', y: 45.0},
+            {name: 'IE', y: 26.8},
+            {name: 'Chrome', y: 12.8},
+            {name: 'Safari', y: 8.5},
+            {name: 'Opera', y: 6.2},
+            {name: '其他', y: 0.7}
+        ];
+        $.ajax({
+            type: "get",
+            async: false,
+            url: "/zjxxw/device/all?date="+yesDateStr,
+            success: function (data) {
+                // console.log(data)
+                // var device_pv = data.split(':');
+                // var device = "";
+                // for (var i = 0; i < device_pv.length - 1; i++) {
+                //     if (i == 0) {
+                //         device = "[" + device + device_pv[i].substr(1) + "],";
+                //     } else {
+                //         device = device + "[" + device_pv[i].substr(2) + "]";
+                //         if (i < device_pv.length - 2) {
+                //             device = device + ",";
+                //         }
+                //     }
+                // }
+
+                //var res = eval('[' + device + ']');
+                device_data = [];
+                var deviceArray = ['Andriod', 'IOS', 'PC'];
+                for (var i = 0; i < data.length; i++) {
+                    dataArrays=data[i].split(":");
+                    device_data.push({
+                        name: dataArrays[0],
+                        y: Number(dataArrays[1])
+                    });
+                    var index = $.inArray(dataArrays[0], deviceArray);
+                    if (index > -1) {
+                        deviceArray.splice(index);
+                    }
+                }
+                // for (var i in deviceArray) {
+                //     device_data.push({
+                //         name: deviceArray[i],
+                //         y: 1000
+                //     });
+                // }
+                // console.log("device_data  "+device_data.forEach(
+                //     function (da) {
+                //         console.log(da)
+                //     }
+                // ))
+
+                var chart = Highcharts.chart('container_device', {
+                    chart: {
+                        spacing: [40, 0, 40, 0]
+                    },
+                    title: {
+                        floating: true,
+                        text: '设备访问占比'
+                    },
+                    tooltip: {
+                        pointFormat: '{point.name}: <b>{point.y}</b> \n 占比: <b>{point.percentage:.1f}%</b>'
+                    },
+                    credits: {
+                        enabled: false
+                    },
+                    exporting: {
+                        enabled: false
+                    },
+                    plotOptions: {
+                        pie: {
+                            allowPointSelect: true,
+                            cursor: 'pointer',
+                            dataLabels: {
+                                enabled: true,
+                                format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                                style: {
+                                    color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                                }
+                            },
+                            point: {
+                                events: {
+                                    mouseOver: function (e) {  // 鼠标滑过时动态更新标题
+                                        // 标题更新函数，API 地址：https://api.hcharts.cn/highcharts#Chart.setTitle
+                                        chart.setTitle({
+                                            text: e.target.name + '：\t' + e.target.y
+                                        });
+                                    }
+                                    //,
+                                    // click: function(e) { // 同样的可以在点击事件里处理
+                                    //     chart.setTitle({
+                                    //         text: e.point.name+ '\t'+ e.point.y + ' %'
+                                    //     });
+                                    // }
+                                }
+                            }
+                        }
+                    },
+                    series: [{
+                        type: 'pie',
+                        innerSize: '70%',
+                        name: '设备占比',
+                        data: device_data
+                    }]
+                }, function (c) { // 图表初始化完毕后的会掉函数
+                    // 环形图圆心
+                    var centerY = c.series[0].center[1],
+                        titleHeight = parseInt(c.title.styles.fontSize);
+                    // 动态设置标题位置
+                    c.setTitle({
+                        y: centerY + titleHeight / 2
+                    });
+                });
+            }
+        });
+
+        // Top10受访页面
+        $.ajax({
+            type: "get",
+            async: false,
+            url: "/zjxxw/url/sort?date="+yesDateStr,
+            success: function (dataArray) {
+                console.log("dataArray  "+dataArray)
+                var sum = 0;
+                dataArray.forEach(function (data) {
+                    sum = sum + Number(data['fre']);
+                })
+                for (var i = 0; i < dataArray.length; i++) {
+                    //console.log("url    "+dataArray[i]['url'])
+                    //console.log("fre    "+dataArray[i]['fre'])
+                    var top10_url = '<tr>' +
+                        '                        <td title=' + dataArray[i]['url'] + ' class="al url">' +
+                        '                            <a target="_blank" class="ellipsis" href=' + dataArray[i]['url'] + '>' + dataArray[i]['url'] + '</a>' +
+                        '                        </td>' +
+                        '                        <td class="ar">' + dataArray[i]['fre'] + '</td>' +
+                        '                        <td class="ratio">' +
+                        '                            <div title="' + (dataArray[i]['fre'] / sum * 100).toFixed(2) +
+                        '%" style="background-color:#dcebfe; width:' + (dataArray[i]['fre'] / sum * 100).toFixed(2) + '%;">' + (dataArray[i]['fre'] / sum * 100).toFixed(2) + '%</div>' +
+                        '                        </td>' +
+                        '                    </tr>';
+                    $("#landing-page-container").append(top10_url);
+                }
+            }
+        });
+
+        // Top10请求时长
+        $.ajax({
+            type: "get",
+            async: false,
+            url: "/zjxxw/requestTime/rank?date="+yesDateStr,
+            success: function (dataArray) {
+
+                for (var i = 0; i < dataArray.length; i++) {
+                        dataline=dataArray[i].split(":")
+                    var time=dataline[0]+":"+dataline[1]+":"+dataline[2]
+                    var top10_request = '<tr>' +
+                        '                        <td title="' + dataline[3] + '" class="al url"><a href="#">' + dataline[3] +
+                        // '                            <a target="_blank" class="ellipsis" href=' + time_data[i][1] + '>' + time_data[i][1].split('"').join('') + '</a>' +
+                        '                        </a></td>' +
+                        '                        <td class="ar">' + time + '</td>' +
+                        '                        <td class="ratio">' +
+                        '                            <div title="dataline[3]">' + dataline[4] + 'ms</div>' +
+                        '                        </td>' +
+                        '                    </tr>';
+                    $("#page-container-browser").append(top10_request);
+                }
+            }
+        });
+
+        // 浏览器占比图
+        $.ajax({
+            type: "get",
+            async: false,
+            url: "/zjxxw/browser/all?date="+yesDateStr,
+            success: function (data) {
+                //console.log(data)
+                var sumpv = 0;
+                var browser_data = [];
+                var drilldownSeries = [];
+                for (var i = 0; i < data.length; i++) {
+                    dataArray=data[i].split(":")
+                    sumpv = sumpv + Number(dataArray[1]);
+                }
+                //console.log(sumpv)
+                for (var i = 0; i < data.length; i++) {
+                    dataArray=data[i].split(":")
+                    browser_data.push({
+                        name: dataArray[0],
+                        y: parseFloat((Number(dataArray[1]) / sumpv * 100).toFixed(2)),
+                        drilldown: dataArray[0]
+                    });
+                    drilldownSeries.push({
+                        name: dataArray[0],
+                        id: dataArray[0],
+                        data: []
+                    });
+                }
+
+                $.ajax({
+                    type: "get",
+                    async: false,
+                    url: "/zjxxw/browser/pc?date="+yesDateStr,
+                    success: function (pcdata) {
+                        pcdataArray=[]
+                        pcdata.forEach(function (pclineData) {
+                            var array=[];
+                            pclineDataArray=pclineData.split(":");
+                            array.push(pclineDataArray[0]);
+                            array.push(pclineDataArray[1]);
+                            pcdataArray.push(array)
+                        })
+
+                        for (var i = 0; i < pcdataArray.length; i++) {
+                            pcdataArray[i][1] = parseFloat((pcdataArray[i][1] / sumpv * 100).toFixed(2));
+                        }
+                        if (drilldownSeries.length > 0) {
+                            drilldownSeries[0].data = pcdataArray;
+                        }
+
+                        $.ajax({
+                            type: "get",
+                            async: false,
+                            url: "/zjxxw/browser/mobile?date="+yesDateStr,
+                            success: function (mobileData) {
+                                mobileDataArray=[]
+                                mobileData.forEach(function (lineData) {
+                                    var array=[];
+                                    mobileDataArray=lineData.split(":");
+                                    array.push(mobileDataArray[0]);
+                                    array.push(mobileDataArray[1]);
+                                    mobileDataArray.push(array)
+                                })
+
+                                for (var i = 0; i < mobileDataArray.length; i++) {
+                                    mobileDataArray[i][1] = parseFloat((mobileDataArray[i][1] / sumpv * 100).toFixed(2));
+                                }
+                                if (drilldownSeries.length > 1) {
+                                    drilldownSeries[1].data = mobileDataArray;
+                                }
+
+                                var chart = Highcharts.chart('container_browser', {
+                                    chart: {
+                                        type: 'pie'
+                                    },
+                                    title: {
+                                        text: '各浏览器访问占比'
+                                    },
+                                    subtitle: {
+                                        text: '单击每种浏览器的具体信息，数据来源: zjlll.net'
+                                    },
+                                    plotOptions: {
+                                        series: {
+                                            dataLabels: {
+                                                enabled: true,
+                                                format: '{point.name}: {point.y:.1f}%'
+                                            }
+                                        }
+                                    },
+                                    tooltip: {
+                                        headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+                                        pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>'
+                                    },
+                                    credits: {
+                                        enabled: false
+                                    },
+                                    exporting: {
+                                        enabled: false
+                                    },
+                                    series: [{
+                                        name: '类型',
+                                        colorByPoint: true,
+                                        data: browser_data
+                                    }],
+                                    drilldown: {
+                                        series: drilldownSeries
+                                    }
+                                });
+                            }
+                        });
+                    }
+                });
+            }
+        });
+    });
+</script>
+</body>
+</html>
